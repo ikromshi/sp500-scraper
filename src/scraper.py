@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import logging
 from urllib.parse import quote
+import os
 
 # logging;
 logging.basicConfig(filename='scraper.log', level=logging.INFO,
@@ -71,14 +72,25 @@ def parse_board_members(html, company_name):
     return board_members
 
 
+def create_folder_if_not_exists(folder_path):
+    os.makedirs(folder_path, exist_ok=True)
+    print(f"Folder created or already exists: {folder_path}")
+
+
 def main():
-    output_file = './output_data/sp500_board_members.csv'
+    input_folder = "input_data"
+    input_file = os.path.join(input_folder, "companies.csv")
+    output_folder = "output_data"
+    url_output = os.path.join(output_folder, "company_urls.csv")
+    bm_output = os.path.join(output_folder, "sp500_board_members.csv")
+
+    create_folder_if_not_exists(output_folder)
     
     # generate and save URLs
-    generate_and_save_urls('./input_data/companies.csv', './output_data/company_urls.csv')
+    generate_and_save_urls(input_file, url_output)
     
     # read URLs from the generated CSV file
-    with open('./output_data/company_urls.csv', 'r') as f:
+    with open(url_output, 'r') as f:
         reader = csv.DictReader(f)
         company_urls = list(reader)
     
@@ -86,7 +98,7 @@ def main():
     total_board_members = 0
     
     # create the output file
-    with open(output_file, 'w', newline='') as f:
+    with open(bm_output, 'w', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=['Company', 'Name', 'Total Compensation'])
         writer.writeheader()
     
@@ -101,8 +113,8 @@ def main():
             board_members = parse_board_members(html, company)
             total_board_members += len(board_members)
             
-            # apend res to the CSV file
-            with open(output_file, 'a', newline='') as f:
+            # append res to the CSV file
+            with open(bm_output, 'a', newline='') as f:
                 writer = csv.DictWriter(f, fieldnames=['Company', 'Name', 'Total Compensation'])
                 writer.writerows(board_members)
             
@@ -121,7 +133,7 @@ def main():
         # time.sleep(0.5)  # 0.5 seconds between requests
     
     print(f"Scraping completed. Total board members found: {total_board_members}")
-    print(f"Results saved to {output_file}")
+    print(f"Results saved to {bm_output}")
 
 if __name__ == "__main__":
     main()
