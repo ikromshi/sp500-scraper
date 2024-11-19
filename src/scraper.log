@@ -1,0 +1,657 @@
+2024-11-19 09:40:10,769 - INFO - Generated and saved URLs for 504 companies to ./output_data/company_urls.csv
+2024-11-19 09:40:10,770 - INFO - Scraping NVIDIA Corporation (1/504)
+2024-11-19 09:40:11,154 - INFO - Scraping Apple Inc. (2/504)
+2024-11-19 09:40:11,458 - INFO - Scraping Microsoft Corporation (3/504)
+2024-11-19 09:40:11,818 - INFO - Scraping Amazon.com, Inc. (4/504)
+2024-11-19 09:40:12,060 - INFO - Scraping Alphabet Inc. (5/504)
+2024-11-19 09:40:12,396 - INFO - Scraping Alphabet Inc. (6/504)
+2024-11-19 09:40:12,633 - INFO - Scraping Facebook Inc. (7/504)
+2024-11-19 09:40:12,948 - INFO - Scraping Tesla, Inc. (8/504)
+2024-11-19 09:40:13,224 - INFO - Scraping Berkshire Hathaway Inc. (9/504)
+2024-11-19 09:40:13,623 - WARNING - No board members found for Berkshire Hathaway Inc.
+2024-11-19 09:40:13,623 - INFO - Scraping Broadcom Inc. (10/504)
+2024-11-19 09:40:13,888 - INFO - Scraping Eli Lilly and Company (11/504)
+2024-11-19 09:40:14,289 - WARNING - No board members found for Eli Lilly and Company
+2024-11-19 09:40:14,289 - INFO - Scraping JPMorgan Chase & Co. (12/504)
+2024-11-19 09:40:14,824 - INFO - Scraping Walmart Inc. (13/504)
+2024-11-19 09:40:15,130 - INFO - Scraping Visa Inc. (14/504)
+2024-11-19 09:40:15,567 - INFO - Scraping UnitedHealth Group Incorporated (15/504)
+2024-11-19 09:40:15,937 - INFO - Scraping Exxon Mobil Corporation (16/504)
+2024-11-19 09:40:16,209 - INFO - Scraping Oracle Corporation (17/504)
+2024-11-19 09:40:16,493 - INFO - Scraping Mastercard Incorporated (18/504)
+2024-11-19 09:40:16,817 - INFO - Scraping The Home Depot, Inc. (19/504)
+2024-11-19 09:40:17,189 - WARNING - No board members found for The Home Depot, Inc.
+2024-11-19 09:40:17,189 - INFO - Scraping Costco Wholesale Corporation (20/504)
+2024-11-19 09:40:17,459 - INFO - Scraping The Procter & Gamble Company (21/504)
+2024-11-19 09:40:17,817 - WARNING - No board members found for The Procter & Gamble Company
+2024-11-19 09:40:17,818 - INFO - Scraping Johnson & Johnson (22/504)
+2024-11-19 09:40:18,151 - INFO - Scraping Bank of America Corporation (23/504)
+2024-11-19 09:40:23,204 - INFO - Scraping Netflix, Inc. (24/504)
+2024-11-19 09:40:23,509 - INFO - Scraping Salesforce, Inc. (25/504)
+2024-11-19 09:40:23,878 - WARNING - No board members found for Salesforce, Inc.
+2024-11-19 09:40:23,878 - INFO - Scraping AbbVie Inc. (26/504)
+2024-11-19 09:40:24,227 - INFO - Scraping Chevron Corporation (27/504)
+2024-11-19 09:40:24,466 - INFO - Scraping T-Mobile US, Inc. (28/504)
+2024-11-19 09:40:24,772 - INFO - Scraping The Coca-Cola Company (29/504)
+2024-11-19 09:40:25,178 - WARNING - No board members found for The Coca-Cola Company
+2024-11-19 09:40:25,178 - INFO - Scraping Wells Fargo & Company (30/504)
+2024-11-19 09:40:25,514 - WARNING - No board members found for Wells Fargo & Company
+2024-11-19 09:40:25,514 - INFO - Scraping Merck & Co., Inc. (31/504)
+2024-11-19 09:40:25,892 - WARNING - No board members found for Merck & Co., Inc.
+2024-11-19 09:40:25,892 - INFO - Scraping Cisco Systems, Inc. (32/504)
+2024-11-19 09:40:26,182 - INFO - Scraping Adobe Inc. (33/504)
+2024-11-19 09:40:26,555 - INFO - Scraping Accenture plc (34/504)
+2024-11-19 09:40:26,960 - INFO - Scraping Blackstone Inc. (35/504)
+2024-11-19 09:40:27,363 - WARNING - No board members found for Blackstone Inc.
+2024-11-19 09:40:27,363 - INFO - Scraping Advanced Micro Devices, Inc. (36/504)
+2024-11-19 09:40:27,713 - INFO - Scraping PepsiCo, Inc. (37/504)
+2024-11-19 09:40:28,015 - INFO - Scraping Morgan Stanley (38/504)
+2024-11-19 09:40:28,319 - INFO - Scraping Linde plc (39/504)
+2024-11-19 09:40:28,567 - INFO - Scraping McDonald's Corporation (40/504)
+2024-11-19 09:40:29,001 - WARNING - No board members found for McDonald's Corporation
+2024-11-19 09:40:29,001 - INFO - Scraping ServiceNow, Inc. (41/504)
+2024-11-19 09:40:29,269 - INFO - Scraping The Walt Disney Company (42/504)
+2024-11-19 09:40:29,629 - WARNING - No board members found for The Walt Disney Company
+2024-11-19 09:40:29,629 - INFO - Scraping American Express Company (43/504)
+2024-11-19 09:40:29,912 - INFO - Scraping Abbott Laboratories (44/504)
+2024-11-19 09:40:30,256 - INFO - Scraping Philip Morris International Inc. (45/504)
+2024-11-19 09:40:30,675 - WARNING - No board members found for Philip Morris International Inc.
+2024-11-19 09:40:30,675 - INFO - Scraping Thermo Fisher Scientific Inc. (46/504)
+2024-11-19 09:40:31,049 - INFO - Scraping Intuit Inc. (47/504)
+2024-11-19 09:40:31,303 - INFO - Scraping GE Aerospace (48/504)
+2024-11-19 09:40:31,704 - WARNING - No board members found for GE Aerospace
+2024-11-19 09:40:31,704 - INFO - Scraping International Business Machines Corporation (49/504)
+2024-11-19 09:40:32,124 - WARNING - No board members found for International Business Machines Corporation
+2024-11-19 09:40:32,124 - INFO - Scraping Intuitive Surgical, Inc. (50/504)
+2024-11-19 09:40:32,439 - INFO - Scraping The Goldman Sachs Group, Inc. (51/504)
+2024-11-19 09:40:32,848 - WARNING - No board members found for The Goldman Sachs Group, Inc.
+2024-11-19 09:40:32,848 - INFO - Scraping Caterpillar Inc. (52/504)
+2024-11-19 09:40:33,123 - INFO - Scraping Texas Instruments Incorporated (53/504)
+2024-11-19 09:40:33,441 - INFO - Scraping QUALCOMM Incorporated (54/504)
+2024-11-19 09:40:33,745 - INFO - Scraping Verizon Communications Inc. (55/504)
+2024-11-19 09:40:34,019 - INFO - Scraping Danaher Corporation (56/504)
+2024-11-19 09:40:34,358 - INFO - Scraping Booking Holdings Inc. (57/504)
+2024-11-19 09:40:34,604 - INFO - Scraping Comcast Corporation (58/504)
+2024-11-19 09:40:34,889 - INFO - Scraping AT&T Inc. (59/504)
+2024-11-19 09:40:35,158 - INFO - Scraping RTX Corporation (60/504)
+2024-11-19 09:40:35,597 - WARNING - No board members found for RTX Corporation
+2024-11-19 09:40:35,597 - INFO - Scraping NextEra Energy, Inc. (61/504)
+2024-11-19 09:40:35,852 - INFO - Scraping S&P Global Inc. (62/504)
+2024-11-19 09:40:36,168 - INFO - Scraping BlackRock, Inc. (63/504)
+2024-11-19 09:40:36,470 - INFO - Scraping Uber Technologies, Inc. (64/504)
+2024-11-19 09:40:36,896 - INFO - Scraping Lowe's Companies, Inc. (65/504)
+2024-11-19 09:40:37,247 - WARNING - No board members found for Lowe's Companies, Inc.
+2024-11-19 09:40:37,247 - INFO - Scraping Amgen Inc. (66/504)
+2024-11-19 09:40:37,568 - INFO - Scraping The Progressive Corporation (67/504)
+2024-11-19 09:40:38,015 - WARNING - No board members found for The Progressive Corporation
+2024-11-19 09:40:38,015 - INFO - Scraping Palantir Technologies Inc. (68/504)
+2024-11-19 09:40:38,298 - INFO - Scraping Honeywell International Inc. (69/504)
+2024-11-19 09:40:49,724 - INFO - Scraping Stryker Corporation (70/504)
+2024-11-19 09:40:50,054 - INFO - Scraping The Charles Schwab Corporation (71/504)
+2024-11-19 09:40:50,440 - WARNING - No board members found for The Charles Schwab Corporation
+2024-11-19 09:40:50,440 - INFO - Scraping Union Pacific Corporation (72/504)
+2024-11-19 09:40:50,757 - INFO - Scraping Eaton Corporation plc (73/504)
+2024-11-19 09:40:51,065 - INFO - Scraping Pfizer Inc. (74/504)
+2024-11-19 09:40:51,393 - INFO - Scraping Applied Materials, Inc. (75/504)
+2024-11-19 09:40:51,758 - INFO - Scraping KKR & Co. Inc. (76/504)
+2024-11-19 09:40:52,024 - INFO - Scraping The TJX Companies, Inc. (77/504)
+2024-11-19 09:40:52,446 - WARNING - No board members found for The TJX Companies, Inc.
+2024-11-19 09:40:52,446 - INFO - Scraping Citigroup Inc. (78/504)
+2024-11-19 09:40:52,763 - INFO - Scraping ConocoPhillips (79/504)
+2024-11-19 09:40:53,089 - INFO - Scraping Boston Scientific Corporation (80/504)
+2024-11-19 09:40:53,443 - INFO - Scraping Lockheed Martin Corporation (81/504)
+2024-11-19 09:40:53,718 - INFO - Scraping Palo Alto Networks, Inc. (82/504)
+2024-11-19 09:40:53,973 - INFO - Scraping Automatic Data Processing, Inc. (83/504)
+2024-11-19 09:40:54,351 - WARNING - No board members found for Automatic Data Processing, Inc.
+2024-11-19 09:40:54,351 - INFO - Scraping Fiserv, Inc. (84/504)
+2024-11-19 09:40:54,634 - INFO - Scraping Vertex Pharmaceuticals Incorporated (85/504)
+2024-11-19 09:40:54,960 - INFO - Scraping Arista Networks, Inc. (86/504)
+2024-11-19 09:40:55,308 - INFO - Scraping Chubb Limited (87/504)
+2024-11-19 09:40:59,427 - ERROR - Error fetching https://www1.salary.com/CHUBB-LIMITED-Executive-Salaries.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2024-11-19 09:40:59,427 - INFO - Scraping United Parcel Service, Inc. (88/504)
+2024-11-19 09:41:01,853 - ERROR - Error fetching https://www1.salary.com/UNITED-PARCEL-SERVICE-INC-Executive-Salaries.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2024-11-19 09:41:01,854 - INFO - Scraping NIKE, Inc. (89/504)
+2024-11-19 09:41:04,884 - ERROR - Error fetching https://www1.salary.com/NIKE-INC-Executive-Salaries.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2024-11-19 09:41:04,885 - INFO - Scraping Bristol-Myers Squibb Company (90/504)
+2024-11-19 09:41:05,265 - INFO - Scraping Medtronic plc (91/504)
+2024-11-19 09:41:05,619 - INFO - Scraping Starbucks Corporation (92/504)
+2024-11-19 09:41:05,979 - INFO - Scraping Gilead Sciences, Inc. (93/504)
+2024-11-19 09:41:06,326 - INFO - Scraping Deere & Company (94/504)
+2024-11-19 09:41:06,715 - INFO - Scraping Marsh & McLennan Companies, Inc. (95/504)
+2024-11-19 09:41:07,185 - WARNING - No board members found for Marsh & McLennan Companies, Inc.
+2024-11-19 09:41:07,185 - INFO - Scraping Micron Technology, Inc. (96/504)
+2024-11-19 09:41:07,580 - INFO - Scraping Prologis, Inc. (97/504)
+2024-11-19 09:41:07,910 - INFO - Scraping Intel Corporation (98/504)
+2024-11-19 09:41:08,385 - INFO - Scraping The Boeing Company (99/504)
+2024-11-19 09:41:08,763 - WARNING - No board members found for The Boeing Company
+2024-11-19 09:41:08,763 - INFO - Scraping Analog Devices, Inc. (100/504)
+2024-11-19 09:41:09,277 - WARNING - No board members found for Analog Devices, Inc.
+2024-11-19 09:41:09,277 - INFO - Scraping The Southern Company (101/504)
+2024-11-19 09:41:09,763 - WARNING - No board members found for The Southern Company
+2024-11-19 09:41:09,763 - INFO - Scraping The Sherwin-Williams Company (102/504)
+2024-11-19 09:41:10,200 - WARNING - No board members found for The Sherwin-Williams Company
+2024-11-19 09:41:10,200 - INFO - Scraping Altria Group, Inc. (103/504)
+2024-11-19 09:41:10,529 - INFO - Scraping Elevance Health, Inc. (104/504)
+2024-11-19 09:41:11,116 - WARNING - No board members found for Elevance Health, Inc.
+2024-11-19 09:41:11,116 - INFO - Scraping Dell Technologies Inc. (105/504)
+2024-11-19 09:41:11,554 - INFO - Scraping American Tower Corporation (106/504)
+2024-11-19 09:41:12,109 - WARNING - No board members found for American Tower Corporation
+2024-11-19 09:41:12,109 - INFO - Scraping Trane Technologies plc (107/504)
+2024-11-19 09:41:12,796 - WARNING - No board members found for Trane Technologies plc
+2024-11-19 09:41:12,796 - INFO - Scraping GE Vernova Inc. (108/504)
+2024-11-19 09:41:13,488 - WARNING - No board members found for GE Vernova Inc.
+2024-11-19 09:41:13,488 - INFO - Scraping Lam Research Corporation (109/504)
+2024-11-19 09:41:13,887 - INFO - Scraping Parker-Hannifin Corporation (110/504)
+2024-11-19 09:41:14,185 - INFO - Scraping The Cigna Group (111/504)
+2024-11-19 09:41:14,533 - WARNING - No board members found for The Cigna Group
+2024-11-19 09:41:14,533 - INFO - Scraping Intercontinental Exchange, Inc. (112/504)
+2024-11-19 09:41:14,944 - INFO - Scraping Waste Management, Inc. (113/504)
+2024-11-19 09:41:15,235 - INFO - Scraping HCA Healthcare, Inc. (114/504)
+2024-11-19 09:41:15,516 - INFO - Scraping Cintas Corporation (115/504)
+2024-11-19 09:41:15,837 - INFO - Scraping Duke Energy Corporation (116/504)
+2024-11-19 09:41:16,124 - INFO - Scraping Equinix, Inc. (117/504)
+2024-11-19 09:41:16,386 - INFO - Scraping Mondelez International, Inc. (118/504)
+2024-11-19 09:41:16,668 - INFO - Scraping PayPal Holdings, Inc. (119/504)
+2024-11-19 09:41:17,038 - INFO - Scraping Moody's Corporation (120/504)
+2024-11-19 09:41:17,349 - WARNING - No board members found for Moody's Corporation
+2024-11-19 09:41:17,349 - INFO - Scraping Amphenol Corporation (121/504)
+2024-11-19 09:41:17,622 - INFO - Scraping Welltower Inc. (122/504)
+2024-11-19 09:41:18,060 - INFO - Scraping Regeneron Pharmaceuticals, Inc. (123/504)
+2024-11-19 09:41:18,404 - WARNING - No board members found for Regeneron Pharmaceuticals, Inc.
+2024-11-19 09:41:18,404 - INFO - Scraping Airbnb, Inc. (124/504)
+2024-11-19 09:41:18,671 - INFO - Scraping CrowdStrike Holdings, Inc. (125/504)
+2024-11-19 09:41:18,966 - INFO - Scraping The PNC Financial Services Group, Inc. (126/504)
+2024-11-19 09:41:19,379 - WARNING - No board members found for The PNC Financial Services Group, Inc.
+2024-11-19 09:41:19,379 - INFO - Scraping KLA Corporation (127/504)
+2024-11-19 09:41:19,796 - WARNING - No board members found for KLA Corporation
+2024-11-19 09:41:19,796 - INFO - Scraping Aon plc (128/504)
+2024-11-19 09:41:20,123 - INFO - Scraping Motorola Solutions, Inc. (129/504)
+2024-11-19 09:41:20,439 - INFO - Scraping CME Group Inc. (130/504)
+2024-11-19 09:41:20,792 - INFO - Scraping Synopsys, Inc. (131/504)
+2024-11-19 09:41:21,108 - INFO - Scraping Illinois Tool Works Inc. (132/504)
+2024-11-19 09:41:21,501 - WARNING - No board members found for Illinois Tool Works Inc.
+2024-11-19 09:41:21,501 - INFO - Scraping Chipotle Mexican Grill, Inc. (133/504)
+2024-11-19 09:41:21,744 - INFO - Scraping Cadence Design Systems, Inc. (134/504)
+2024-11-19 09:41:22,064 - INFO - Scraping General Dynamics Corporation (135/504)
+2024-11-19 09:41:22,419 - INFO - Scraping Zoetis Inc. (136/504)
+2024-11-19 09:41:22,717 - INFO - Scraping U.S. Bancorp (137/504)
+2024-11-19 09:41:23,064 - WARNING - No board members found for U.S. Bancorp
+2024-11-19 09:41:23,064 - INFO - Scraping Marriott International, Inc. (138/504)
+2024-11-19 09:41:23,417 - WARNING - No board members found for Marriott International, Inc.
+2024-11-19 09:41:23,417 - INFO - Scraping McKesson Corporation (139/504)
+2024-11-19 09:41:23,701 - INFO - Scraping Colgate-Palmolive Company (140/504)
+2024-11-19 09:41:23,957 - INFO - Scraping EOG Resources, Inc. (141/504)
+2024-11-19 09:41:24,229 - INFO - Scraping Emerson Electric Co. (142/504)
+2024-11-19 09:41:24,571 - INFO - Scraping Fortinet, Inc. (143/504)
+2024-11-19 09:41:24,869 - INFO - Scraping Northrop Grumman Corporation (144/504)
+2024-11-19 09:41:25,168 - INFO - Scraping FedEx Corporation (145/504)
+2024-11-19 09:41:25,458 - INFO - Scraping 3M Company (146/504)
+2024-11-19 09:41:25,983 - INFO - Scraping Capital One Financial Corporation (147/504)
+2024-11-19 09:41:26,296 - INFO - Scraping TransDigm Group Incorporated (148/504)
+2024-11-19 09:41:26,579 - INFO - Scraping Air Products and Chemicals, Inc. (149/504)
+2024-11-19 09:41:26,818 - INFO - Scraping Constellation Energy Corporation (150/504)
+2024-11-19 09:41:27,189 - WARNING - No board members found for Constellation Energy Corporation
+2024-11-19 09:41:27,189 - INFO - Scraping Target Corporation (151/504)
+2024-11-19 09:41:27,481 - INFO - Scraping O'Reilly Automotive, Inc. (152/504)
+2024-11-19 09:41:27,855 - WARNING - No board members found for O'Reilly Automotive, Inc.
+2024-11-19 09:41:27,855 - INFO - Scraping Ecolab Inc. (153/504)
+2024-11-19 09:41:28,158 - INFO - Scraping The Williams Companies, Inc. (154/504)
+2024-11-19 09:41:28,548 - WARNING - No board members found for The Williams Companies, Inc.
+2024-11-19 09:41:28,548 - INFO - Scraping CSX Corporation (155/504)
+2024-11-19 09:41:28,790 - INFO - Scraping Simon Property Group, Inc. (156/504)
+2024-11-19 09:41:29,130 - INFO - Scraping CVS Health Corporation (157/504)
+2024-11-19 09:41:29,411 - INFO - Scraping Carrier Global Corporation (158/504)
+2024-11-19 09:41:29,828 - INFO - Scraping Republic Services, Inc. (159/504)
+2024-11-19 09:41:30,108 - INFO - Scraping Becton, Dickinson and Company (160/504)
+2024-11-19 09:41:30,472 - INFO - Scraping Arthur J. Gallagher & Co. (161/504)
+2024-11-19 09:41:30,746 - INFO - Scraping Autodesk, Inc. (162/504)
+2024-11-19 09:41:31,020 - INFO - Scraping ONEOK, Inc. (163/504)
+2024-11-19 09:41:31,292 - INFO - Scraping General Motors Company (164/504)
+2024-11-19 09:41:31,608 - INFO - Scraping Royal Caribbean Cruises Ltd. (165/504)
+2024-11-19 09:41:31,919 - INFO - Scraping Aflac Incorporated (166/504)
+2024-11-19 09:41:32,207 - INFO - Scraping Truist Financial Corporation (167/504)
+2024-11-19 09:41:32,582 - WARNING - No board members found for Truist Financial Corporation
+2024-11-19 09:41:32,582 - INFO - Scraping Freeport-McMoRan Inc. (168/504)
+2024-11-19 09:41:32,871 - INFO - Scraping Schlumberger Limited (169/504)
+2024-11-19 09:41:33,238 - WARNING - No board members found for Schlumberger Limited
+2024-11-19 09:41:33,238 - INFO - Scraping Digital Realty Trust, Inc. (170/504)
+2024-11-19 09:41:33,549 - INFO - Scraping Kinder Morgan, Inc. (171/504)
+2024-11-19 09:41:33,848 - INFO - Scraping Hilton Worldwide Holdings Inc. (172/504)
+2024-11-19 09:41:34,317 - INFO - Scraping The Travelers Companies, Inc. (173/504)
+2024-11-19 09:41:34,694 - WARNING - No board members found for The Travelers Companies, Inc.
+2024-11-19 09:41:34,694 - INFO - Scraping Norfolk Southern Corporation (174/504)
+2024-11-19 09:41:35,036 - INFO - Scraping PACCAR Inc (175/504)
+2024-11-19 09:41:35,313 - INFO - Scraping Roper Technologies, Inc. (176/504)
+2024-11-19 09:41:35,678 - INFO - Scraping Public Storage (177/504)
+2024-11-19 09:41:35,940 - INFO - Scraping Sempra (178/504)
+2024-11-19 09:41:36,317 - WARNING - No board members found for Sempra
+2024-11-19 09:41:36,317 - INFO - Scraping MetLife, Inc. (179/504)
+2024-11-19 09:41:36,578 - INFO - Scraping W.W. Grainger, Inc. (180/504)
+2024-11-19 09:41:36,971 - WARNING - No board members found for W.W. Grainger, Inc.
+2024-11-19 09:41:36,971 - INFO - Scraping The Bank of New York Mellon Corporation (181/504)
+2024-11-19 09:41:37,344 - WARNING - No board members found for The Bank of New York Mellon Corporation
+2024-11-19 09:41:37,344 - INFO - Scraping Johnson Controls International plc (182/504)
+2024-11-19 09:41:37,669 - INFO - Scraping Charter Communications, Inc. (183/504)
+2024-11-19 09:41:38,061 - WARNING - No board members found for Charter Communications, Inc.
+2024-11-19 09:41:38,061 - INFO - Scraping NXP Semiconductors N.V. (184/504)
+2024-11-19 09:41:38,436 - WARNING - No board members found for NXP Semiconductors N.V.
+2024-11-19 09:41:38,436 - INFO - Scraping Fair Isaac Corporation (185/504)
+2024-11-19 09:41:38,771 - INFO - Scraping PG&E Corporation (186/504)
+2024-11-19 09:41:39,107 - INFO - Scraping United Rentals, Inc. (187/504)
+2024-11-19 09:41:39,431 - INFO - Scraping Copart, Inc. (188/504)
+2024-11-19 09:41:39,677 - INFO - Scraping Ameriprise Financial, Inc. (189/504)
+2024-11-19 09:41:40,015 - INFO - Scraping Phillips 66 (190/504)
+2024-11-19 09:41:40,275 - INFO - Scraping AutoZone, Inc. (191/504)
+2024-11-19 09:41:40,571 - INFO - Scraping D.R. Horton, Inc. (192/504)
+2024-11-19 09:41:40,936 - WARNING - No board members found for D.R. Horton, Inc.
+2024-11-19 09:41:40,936 - INFO - Scraping The Allstate Corporation (193/504)
+2024-11-19 09:41:41,356 - WARNING - No board members found for The Allstate Corporation
+2024-11-19 09:41:41,356 - INFO - Scraping Diamondback Energy, Inc. (194/504)
+2024-11-19 09:41:41,706 - INFO - Scraping Paychex, Inc. (195/504)
+2024-11-19 09:41:41,983 - INFO - Scraping American Electric Power Company, Inc. (196/504)
+2024-11-19 09:41:42,356 - WARNING - No board members found for American Electric Power Company, Inc.
+2024-11-19 09:41:42,356 - INFO - Scraping Marathon Petroleum Corporation (197/504)
+2024-11-19 09:41:42,706 - INFO - Scraping Monster Beverage Corporation (198/504)
+2024-11-19 09:41:42,995 - INFO - Scraping Cummins Inc. (199/504)
+2024-11-19 09:41:43,401 - INFO - Scraping Realty Income Corporation (200/504)
+2024-11-19 09:41:43,910 - INFO - Scraping Dominion Energy, Inc. (201/504)
+2024-11-19 09:41:44,298 - INFO - Scraping Vistra Corp. (202/504)
+2024-11-19 09:41:44,823 - WARNING - No board members found for Vistra Corp.
+2024-11-19 09:41:44,823 - INFO - Scraping Quanta Services, Inc. (203/504)
+2024-11-19 09:41:45,120 - INFO - Scraping Fidelity National Information Services, Inc. (204/504)
+2024-11-19 09:41:45,694 - WARNING - No board members found for Fidelity National Information Services, Inc.
+2024-11-19 09:41:45,694 - INFO - Scraping American International Group, Inc. (205/504)
+2024-11-19 09:41:46,367 - WARNING - No board members found for American International Group, Inc.
+2024-11-19 09:41:46,368 - INFO - Scraping Cencora, Inc. (206/504)
+2024-11-19 09:41:47,051 - WARNING - No board members found for Cencora, Inc.
+2024-11-19 09:41:47,051 - INFO - Scraping Fastenal Company (207/504)
+2024-11-19 09:41:47,422 - INFO - Scraping Occidental Petroleum Corporation (208/504)
+2024-11-19 09:41:47,910 - INFO - Scraping L3Harris Technologies, Inc. (209/504)
+2024-11-19 09:41:48,279 - INFO - Scraping Ross Stores, Inc. (210/504)
+2024-11-19 09:41:48,796 - INFO - Scraping Newmont Corporation (211/504)
+2024-11-19 09:41:49,483 - WARNING - No board members found for Newmont Corporation
+2024-11-19 09:41:49,483 - INFO - Scraping MSCI Inc. (212/504)
+2024-11-19 09:41:49,831 - INFO - Scraping Old Dominion Freight Line, Inc. (213/504)
+2024-11-19 09:41:50,409 - WARNING - No board members found for Old Dominion Freight Line, Inc.
+2024-11-19 09:41:50,409 - INFO - Scraping Axon Enterprise, Inc. (214/504)
+2024-11-19 09:41:50,758 - INFO - Scraping Kenvue Inc. (215/504)
+2024-11-19 09:41:51,291 - WARNING - No board members found for Kenvue Inc.
+2024-11-19 09:41:51,291 - INFO - Scraping Howmet Aerospace Inc. (216/504)
+2024-11-19 09:41:51,948 - WARNING - No board members found for Howmet Aerospace Inc.
+2024-11-19 09:41:51,948 - INFO - Scraping Lennar Corporation (217/504)
+2024-11-19 09:41:52,260 - INFO - Scraping Prudential Financial, Inc. (218/504)
+2024-11-19 09:41:52,649 - INFO - Scraping Nasdaq, Inc. (219/504)
+2024-11-19 09:42:07,393 - INFO - Scraping Crown Castle Inc. (220/504)
+2024-11-19 09:42:07,753 - WARNING - No board members found for Crown Castle Inc.
+2024-11-19 09:42:07,753 - INFO - Scraping Hess Corporation (221/504)
+2024-11-19 09:42:08,143 - INFO - Scraping Kimberly-Clark Corporation (222/504)
+2024-11-19 09:42:08,528 - INFO - Scraping AMETEK, Inc. (223/504)
+2024-11-19 09:42:08,833 - INFO - Scraping TE Connectivity plc (224/504)
+2024-11-19 09:42:09,173 - WARNING - No board members found for TE Connectivity plc
+2024-11-19 09:42:09,173 - INFO - Scraping Valero Energy Corporation (225/504)
+2024-11-19 09:42:09,501 - INFO - Scraping Public Service Enterprise Group Incorporated (226/504)
+2024-11-19 09:42:09,829 - WARNING - No board members found for Public Service Enterprise Group Incorporated
+2024-11-19 09:42:09,829 - INFO - Scraping Discover Financial Services (227/504)
+2024-11-19 09:42:10,179 - WARNING - No board members found for Discover Financial Services
+2024-11-19 09:42:10,179 - INFO - Scraping Ford Motor Company (228/504)
+2024-11-19 09:42:10,439 - INFO - Scraping Constellation Brands, Inc. (229/504)
+2024-11-19 09:42:10,803 - WARNING - No board members found for Constellation Brands, Inc.
+2024-11-19 09:42:10,803 - INFO - Scraping Keurig Dr Pepper Inc. (230/504)
+2024-11-19 09:42:11,070 - INFO - Scraping Targa Resources Corp. (231/504)
+2024-11-19 09:42:11,347 - INFO - Scraping Baker Hughes Company (232/504)
+2024-11-19 09:42:11,736 - WARNING - No board members found for Baker Hughes Company
+2024-11-19 09:42:11,736 - INFO - Scraping Electronic Arts Inc. (233/504)
+2024-11-19 09:42:12,088 - INFO - Scraping The Kroger Co. (234/504)
+2024-11-19 09:42:12,465 - WARNING - No board members found for The Kroger Co.
+2024-11-19 09:42:12,465 - INFO - Scraping Delta Air Lines, Inc. (235/504)
+2024-11-19 09:42:12,717 - INFO - Scraping Ingersoll Rand Inc. (236/504)
+2024-11-19 09:42:13,102 - WARNING - No board members found for Ingersoll Rand Inc.
+2024-11-19 09:42:13,102 - INFO - Scraping Gartner, Inc. (237/504)
+2024-11-19 09:42:13,398 - INFO - Scraping Garmin Ltd. (238/504)
+2024-11-19 09:42:13,684 - INFO - Scraping Edwards Lifesciences Corporation (239/504)
+2024-11-19 09:42:13,935 - INFO - Scraping Xcel Energy Inc. (240/504)
+2024-11-19 09:42:14,289 - INFO - Scraping CBRE Group, Inc. (241/504)
+2024-11-19 09:42:14,757 - INFO - Scraping Corning Incorporated (242/504)
+2024-11-19 09:42:15,103 - INFO - Scraping Verisk Analytics, Inc. (243/504)
+2024-11-19 09:42:15,426 - INFO - Scraping Otis Worldwide Corporation (244/504)
+2024-11-19 09:42:15,726 - INFO - Scraping Exelon Corporation (245/504)
+2024-11-19 09:42:16,010 - INFO - Scraping Lululemon Athletica Inc. (246/504)
+2024-11-19 09:42:16,305 - INFO - Scraping Arch Capital Group Ltd. (247/504)
+2024-11-19 09:42:16,554 - INFO - Scraping Cognizant Technology Solutions Corporation (248/504)
+2024-11-19 09:42:16,890 - INFO - Scraping Corteva, Inc. (249/504)
+2024-11-19 09:42:17,438 - INFO - Scraping The Kraft Heinz Company (250/504)
+2024-11-19 09:42:17,877 - WARNING - No board members found for The Kraft Heinz Company
+2024-11-19 09:42:17,878 - INFO - Scraping GE HealthCare Technologies Inc. (251/504)
+2024-11-19 09:42:18,151 - WARNING - No board members found for GE HealthCare Technologies Inc.
+2024-11-19 09:42:18,151 - INFO - Scraping Yum! Brands, Inc. (252/504)
+2024-11-19 09:42:18,532 - WARNING - No board members found for Yum! Brands, Inc.
+2024-11-19 09:42:18,532 - INFO - Scraping Vulcan Materials Company (253/504)
+2024-11-19 09:42:18,864 - INFO - Scraping Sysco Corporation (254/504)
+2024-11-19 09:42:19,193 - INFO - Scraping Agilent Technologies, Inc. (255/504)
+2024-11-19 09:42:19,518 - INFO - Scraping Extra Space Storage Inc. (256/504)
+2024-11-19 09:42:19,817 - INFO - Scraping Martin Marietta Materials, Inc. (257/504)
+2024-11-19 09:42:20,211 - WARNING - No board members found for Martin Marietta Materials, Inc.
+2024-11-19 09:42:20,211 - INFO - Scraping M&T Bank Corporation (258/504)
+2024-11-19 09:42:20,536 - WARNING - No board members found for M&T Bank Corporation
+2024-11-19 09:42:20,536 - INFO - Scraping HP Inc. (259/504)
+2024-11-19 09:42:20,893 - INFO - Scraping General Mills, Inc. (260/504)
+2024-11-19 09:42:21,193 - INFO - Scraping IQVIA Holdings Inc. (261/504)
+2024-11-19 09:42:21,540 - INFO - Scraping Las Vegas Sands Corp. (262/504)
+2024-11-19 09:42:21,807 - INFO - Scraping The Hershey Company (263/504)
+2024-11-19 09:42:22,197 - WARNING - No board members found for The Hershey Company
+2024-11-19 09:42:22,197 - INFO - Scraping Nucor Corporation (264/504)
+2024-11-19 09:42:22,528 - INFO - Scraping IDEXX Laboratories, Inc. (265/504)
+2024-11-19 09:42:22,911 - WARNING - No board members found for IDEXX Laboratories, Inc.
+2024-11-19 09:42:22,911 - INFO - Scraping ResMed Inc. (266/504)
+2024-11-19 09:42:23,193 - INFO - Scraping DuPont de Nemours, Inc. (267/504)
+2024-11-19 09:42:23,511 - INFO - Scraping The Hartford Financial Services Group, Inc. (268/504)
+2024-11-19 09:42:23,968 - WARNING - No board members found for The Hartford Financial Services Group, Inc.
+2024-11-19 09:42:23,968 - INFO - Scraping Microchip Technology Incorporated (269/504)
+2024-11-19 09:42:24,361 - INFO - Scraping Iron Mountain Incorporated (270/504)
+2024-11-19 09:42:24,692 - INFO - Scraping Westinghouse Air Brake Technologies Corporation (271/504)
+2024-11-19 09:42:25,079 - WARNING - No board members found for Westinghouse Air Brake Technologies Corporation
+2024-11-19 09:42:25,079 - INFO - Scraping Consolidated Edison, Inc. (272/504)
+2024-11-19 09:42:25,318 - INFO - Scraping VICI Properties Inc. (273/504)
+2024-11-19 09:42:25,538 - INFO - Scraping Humana Inc. (274/504)
+2024-11-19 09:42:25,850 - INFO - Scraping Raymond James Financial, Inc. (275/504)
+2024-11-19 09:42:26,252 - WARNING - No board members found for Raymond James Financial, Inc.
+2024-11-19 09:42:26,252 - INFO - Scraping AvalonBay Communities, Inc. (276/504)
+2024-11-19 09:42:26,512 - INFO - Scraping Carnival Corporation & plc (277/504)
+2024-11-19 09:42:26,913 - WARNING - No board members found for Carnival Corporation & plc
+2024-11-19 09:42:26,913 - INFO - Scraping Edison International (278/504)
+2024-11-19 09:42:27,195 - INFO - Scraping Rockwell Automation, Inc. (279/504)
+2024-11-19 09:42:27,542 - INFO - Scraping Entergy Corporation (280/504)
+2024-11-19 09:42:27,836 - INFO - Scraping Fifth Third Bancorp (281/504)
+2024-11-19 09:42:28,361 - INFO - Scraping Willis Towers Watson Public Limited Company (282/504)
+2024-11-19 09:42:28,754 - WARNING - No board members found for Willis Towers Watson Public Limited Company
+2024-11-19 09:42:28,754 - INFO - Scraping Brown & Brown, Inc. (283/504)
+2024-11-19 09:42:29,068 - INFO - Scraping Take-Two Interactive Software, Inc. (284/504)
+2024-11-19 09:42:29,453 - WARNING - No board members found for Take-Two Interactive Software, Inc.
+2024-11-19 09:42:29,453 - INFO - Scraping WEC Energy Group, Inc. (285/504)
+2024-11-19 09:42:29,733 - INFO - Scraping Dow Inc. (286/504)
+2024-11-19 09:42:30,044 - INFO - Scraping Equifax Inc. (287/504)
+2024-11-19 09:42:30,349 - INFO - Scraping United Airlines Holdings, Inc. (288/504)
+2024-11-19 09:42:30,662 - INFO - Scraping Live Nation Entertainment, Inc. (289/504)
+2024-11-19 09:42:31,020 - WARNING - No board members found for Live Nation Entertainment, Inc.
+2024-11-19 09:42:31,020 - INFO - Scraping DexCom, Inc. (290/504)
+2024-11-19 09:42:31,306 - INFO - Scraping Xylem Inc. (291/504)
+2024-11-19 09:42:31,697 - INFO - Scraping Global Payments Inc. (292/504)
+2024-11-19 09:42:32,003 - INFO - Scraping Tractor Supply Company (293/504)
+2024-11-19 09:42:32,364 - WARNING - No board members found for Tractor Supply Company
+2024-11-19 09:42:32,364 - INFO - Scraping eBay Inc. (294/504)
+2024-11-19 09:42:32,615 - INFO - Scraping CoStar Group, Inc. (295/504)
+2024-11-19 09:42:32,930 - INFO - Scraping ANSYS, Inc. (296/504)
+2024-11-19 09:42:33,242 - INFO - Scraping Centene Corporation (297/504)
+2024-11-19 09:42:33,541 - INFO - Scraping Equity Residential (298/504)
+2024-11-19 09:42:33,846 - INFO - Scraping Cardinal Health, Inc. (299/504)
+2024-11-19 09:42:34,129 - INFO - Scraping PPG Industries, Inc. (300/504)
+2024-11-19 09:42:34,582 - WARNING - No board members found for PPG Industries, Inc.
+2024-11-19 09:42:34,582 - INFO - Scraping State Street Corporation (301/504)
+2024-11-19 09:43:03,429 - INFO - Scraping Monolithic Power Systems, Inc. (302/504)
+2024-11-19 09:43:03,730 - INFO - Scraping Kellanova (303/504)
+2024-11-19 09:43:04,152 - WARNING - No board members found for Kellanova
+2024-11-19 09:43:04,152 - INFO - Scraping NVR, Inc. (304/504)
+2024-11-19 09:43:04,421 - INFO - Scraping Dover Corporation (305/504)
+2024-11-19 09:43:04,786 - INFO - Scraping ON Semiconductor Corporation (306/504)
+2024-11-19 09:43:05,068 - INFO - Scraping Hewlett Packard Enterprise Company (307/504)
+2024-11-19 09:43:05,375 - INFO - Scraping Smurfit Westrock Plc (308/504)
+2024-11-19 09:43:05,747 - WARNING - No board members found for Smurfit Westrock Plc
+2024-11-19 09:43:05,747 - INFO - Scraping LyondellBasell Industries N.V. (309/504)
+2024-11-19 09:43:06,143 - WARNING - No board members found for LyondellBasell Industries N.V.
+2024-11-19 09:43:06,143 - INFO - Scraping Church & Dwight Co., Inc. (310/504)
+2024-11-19 09:43:06,524 - WARNING - No board members found for Church & Dwight Co., Inc.
+2024-11-19 09:43:06,524 - INFO - Scraping Deckers Outdoor Corporation (311/504)
+2024-11-19 09:43:06,824 - INFO - Scraping Ventas, Inc. (312/504)
+2024-11-19 09:43:07,157 - INFO - Scraping Broadridge Financial Solutions, Inc. (313/504)
+2024-11-19 09:43:07,565 - WARNING - No board members found for Broadridge Financial Solutions, Inc.
+2024-11-19 09:43:07,565 - INFO - Scraping PulteGroup, Inc. (314/504)
+2024-11-19 09:43:07,832 - INFO - Scraping T. Rowe Price Group, Inc. (315/504)
+2024-11-19 09:43:08,192 - WARNING - No board members found for T. Rowe Price Group, Inc.
+2024-11-19 09:43:08,192 - INFO - Scraping American Water Works Company, Inc. (316/504)
+2024-11-19 09:43:08,491 - INFO - Scraping Halliburton Company (317/504)
+2024-11-19 09:43:08,836 - INFO - Scraping Fortive Corporation (318/504)
+2024-11-19 09:43:09,166 - INFO - Scraping Keysight Technologies, Inc. (319/504)
+2024-11-19 09:43:09,478 - INFO - Scraping Huntington Bancshares Incorporated (320/504)
+2024-11-19 09:43:09,829 - WARNING - No board members found for Huntington Bancshares Incorporated
+2024-11-19 09:43:09,829 - INFO - Scraping GoDaddy Inc. (321/504)
+2024-11-19 09:43:10,161 - INFO - Scraping Tyler Technologies, Inc. (322/504)
+2024-11-19 09:43:10,464 - INFO - Scraping Archer-Daniels-Midland Company (323/504)
+2024-11-19 09:43:10,769 - INFO - Scraping EQT Corporation (324/504)
+2024-11-19 09:43:11,030 - INFO - Scraping Veralto Corporation (325/504)
+2024-11-19 09:43:11,343 - WARNING - No board members found for Veralto Corporation
+2024-11-19 09:43:11,343 - INFO - Scraping Corpay, Inc. (326/504)
+2024-11-19 09:43:11,684 - WARNING - No board members found for Corpay, Inc.
+2024-11-19 09:43:11,684 - INFO - Scraping Synchrony Financial (327/504)
+2024-11-19 09:43:11,927 - INFO - Scraping Devon Energy Corporation (328/504)
+2024-11-19 09:43:12,209 - INFO - Scraping Mettler-Toledo International Inc. (329/504)
+2024-11-19 09:43:12,600 - WARNING - No board members found for Mettler-Toledo International Inc.
+2024-11-19 09:43:12,600 - INFO - Scraping industrial software (330/504)
+2024-11-19 09:43:12,981 - WARNING - No board members found for industrial software
+2024-11-19 09:43:12,981 - INFO - Scraping DTE Energy Company (331/504)
+2024-11-19 09:43:13,232 - INFO - Scraping PPL Corporation (332/504)
+2024-11-19 09:43:13,497 - INFO - Scraping Ameren Corporation (333/504)
+2024-11-19 09:43:13,725 - INFO - Scraping Rollins, Inc. (334/504)
+2024-11-19 09:43:14,034 - INFO - Scraping NetApp, Inc. (335/504)
+2024-11-19 09:43:14,310 - INFO - Scraping Regions Financial Corporation (336/504)
+2024-11-19 09:43:14,772 - INFO - Scraping FirstEnergy Corp. (337/504)
+2024-11-19 09:43:15,016 - INFO - Scraping SBA Communications Corporation (338/504)
+2024-11-19 09:43:15,305 - INFO - Scraping Cincinnati Financial Corporation (339/504)
+2024-11-19 09:43:15,625 - INFO - Scraping CDW Corporation (340/504)
+2024-11-19 09:43:15,958 - INFO - Scraping Hubbell Incorporated (341/504)
+2024-11-19 09:43:16,268 - INFO - Scraping Biogen Inc. (342/504)
+2024-11-19 09:43:16,603 - INFO - Scraping Expedia Group, Inc. (343/504)
+2024-11-19 09:43:16,912 - INFO - Scraping W. R. Berkley Corporation (344/504)
+2024-11-19 09:43:17,258 - WARNING - No board members found for W. R. Berkley Corporation
+2024-11-19 09:43:17,258 - INFO - Scraping Tyson Foods, Inc. (345/504)
+2024-11-19 09:43:17,662 - WARNING - No board members found for Tyson Foods, Inc.
+2024-11-19 09:43:17,663 - INFO - Scraping The Estée Lauder Companies Inc. (346/504)
+2024-11-19 09:43:18,112 - WARNING - No board members found for The Estée Lauder Companies Inc.
+2024-11-19 09:43:18,113 - INFO - Scraping PTC Inc. (347/504)
+2024-11-19 09:43:18,375 - INFO - Scraping West Pharmaceutical Services, Inc. (348/504)
+2024-11-19 09:43:18,795 - WARNING - No board members found for West Pharmaceutical Services, Inc.
+2024-11-19 09:43:18,795 - INFO - Scraping Eversource Energy (349/504)
+2024-11-19 09:43:19,205 - WARNING - No board members found for Eversource Energy
+2024-11-19 09:43:19,205 - INFO - Scraping Warner Bros. Discovery, Inc. (350/504)
+2024-11-19 09:43:19,542 - WARNING - No board members found for Warner Bros. Discovery, Inc.
+2024-11-19 09:43:19,542 - INFO - Scraping Atmos Energy Corporation (351/504)
+2024-11-19 09:43:19,829 - INFO - Scraping Weyerhaeuser Company (352/504)
+2024-11-19 09:43:20,220 - INFO - Scraping Zimmer Biomet Holdings, Inc. (353/504)
+2024-11-19 09:43:20,585 - INFO - Scraping International Flavors & Fragrances Inc. (354/504)
+2024-11-19 09:43:20,940 - WARNING - No board members found for International Flavors & Fragrances Inc.
+2024-11-19 09:43:20,940 - INFO - Scraping Teledyne Technologies Incorporated (355/504)
+2024-11-19 09:43:21,242 - INFO - Scraping STERIS plc (356/504)
+2024-11-19 09:43:21,551 - INFO - Scraping Western Digital Corporation (357/504)
+2024-11-19 09:43:21,833 - INFO - Scraping Leidos Holdings, Inc. (358/504)
+2024-11-19 09:43:22,214 - INFO - Scraping Northern Trust Corporation (359/504)
+2024-11-19 09:43:22,865 - INFO - Scraping Waters Corporation (360/504)
+2024-11-19 09:43:23,273 - INFO - Scraping Steel Dynamics, Inc. (361/504)
+2024-11-19 09:43:23,593 - INFO - Scraping Erie Indemnity Company (362/504)
+2024-11-19 09:43:24,008 - INFO - Scraping Packaging Corporation of America (363/504)
+2024-11-19 09:43:24,332 - INFO - Scraping Cboe Global Markets, Inc. (364/504)
+2024-11-19 09:43:24,750 - INFO - Scraping The Clorox Company (365/504)
+2024-11-19 09:43:25,335 - WARNING - No board members found for The Clorox Company
+2024-11-19 09:43:25,335 - INFO - Scraping Invitation Homes Inc. (366/504)
+2024-11-19 09:43:25,803 - INFO - Scraping Citizens Financial Group, Inc. (367/504)
+2024-11-19 09:43:26,496 - INFO - Scraping Seagate Technology Holdings plc (368/504)
+2024-11-19 09:43:27,057 - WARNING - No board members found for Seagate Technology Holdings plc
+2024-11-19 09:43:27,057 - INFO - Scraping First Solar, Inc. (369/504)
+2024-11-19 09:43:27,421 - INFO - Scraping CMS Energy Corporation (370/504)
+2024-11-19 09:43:27,881 - INFO - Scraping Builders FirstSource, Inc. (371/504)
+2024-11-19 09:43:28,262 - WARNING - No board members found for Builders FirstSource, Inc.
+2024-11-19 09:43:28,262 - INFO - Scraping Fox Corporation (372/504)
+2024-11-19 09:43:28,643 - INFO - Scraping Fox Corporation (373/504)
+2024-11-19 09:43:28,930 - INFO - Scraping CenterPoint Energy, Inc. (374/504)
+2024-11-19 09:43:29,182 - INFO - Scraping Essex Property Trust, Inc. (375/504)
+2024-11-19 09:43:29,499 - INFO - Scraping International Paper Company (376/504)
+2024-11-19 09:43:30,043 - WARNING - No board members found for International Paper Company
+2024-11-19 09:43:30,043 - INFO - Scraping Zebra Technologies Corporation (377/504)
+2024-11-19 09:43:30,627 - WARNING - No board members found for Zebra Technologies Corporation
+2024-11-19 09:43:30,628 - INFO - Scraping Best Buy Co., Inc. (378/504)
+2024-11-19 09:43:30,915 - INFO - Scraping McCormick & Company, Incorporated (379/504)
+2024-11-19 09:43:31,296 - INFO - Scraping The Cooper Companies, Inc. (380/504)
+2024-11-19 09:43:31,835 - WARNING - No board members found for The Cooper Companies, Inc.
+2024-11-19 09:43:31,835 - INFO - Scraping Principal Financial Group, Inc. (381/504)
+2024-11-19 09:43:32,314 - WARNING - No board members found for Principal Financial Group, Inc.
+2024-11-19 09:43:32,314 - INFO - Scraping Labcorp Holdings Inc. (382/504)
+2024-11-19 09:43:32,871 - WARNING - No board members found for Labcorp Holdings Inc.
+2024-11-19 09:43:32,871 - INFO - Scraping Darden Restaurants, Inc. (383/504)
+2024-11-19 09:43:33,226 - INFO - Scraping Southwest Airlines Co. (384/504)
+2024-11-19 09:43:33,696 - WARNING - No board members found for Southwest Airlines Co.
+2024-11-19 09:43:33,696 - INFO - Scraping Brown-Forman Corporation (385/504)
+2024-11-19 09:43:34,059 - INFO - Scraping KeyCorp (386/504)
+2024-11-19 09:43:34,715 - INFO - Scraping Mid-America Apartment Communities, Inc. (387/504)
+2024-11-19 09:43:35,129 - WARNING - No board members found for Mid-America Apartment Communities, Inc.
+2024-11-19 09:43:35,129 - INFO - Scraping Omnicom Group Inc. (388/504)
+2024-11-19 09:43:35,594 - WARNING - No board members found for Omnicom Group Inc.
+2024-11-19 09:43:35,594 - INFO - Scraping Coterra Energy Inc. (389/504)
+2024-11-19 09:43:36,098 - WARNING - No board members found for Coterra Energy Inc.
+2024-11-19 09:43:36,098 - INFO - Scraping Snap-on Incorporated (390/504)
+2024-11-19 09:43:36,538 - INFO - Scraping NRG Energy, Inc. (391/504)
+2024-11-19 09:43:37,169 - INFO - Scraping Alexandria Real Estate Equities, Inc. (392/504)
+2024-11-19 09:43:37,754 - WARNING - No board members found for Alexandria Real Estate Equities, Inc.
+2024-11-19 09:43:37,754 - INFO - Scraping J.B. Hunt Transport Services, Inc. (393/504)
+2024-11-19 09:43:38,201 - WARNING - No board members found for J.B. Hunt Transport Services, Inc.
+2024-11-19 09:43:38,201 - INFO - Scraping FactSet Research Systems Inc. (394/504)
+2024-11-19 09:43:38,574 - INFO - Scraping Hologic, Inc. (395/504)
+2024-11-19 09:43:38,924 - INFO - Scraping Insulet Corporation (396/504)
+2024-11-19 09:43:39,245 - INFO - Scraping Gen Digital Inc. (397/504)
+2024-11-19 09:43:39,686 - WARNING - No board members found for Gen Digital Inc.
+2024-11-19 09:43:39,686 - INFO - Scraping Ball Corporation (398/504)
+2024-11-19 09:43:40,014 - INFO - Scraping Loews Corporation (399/504)
+2024-11-19 09:43:40,243 - INFO - Scraping Quest Diagnostics Incorporated (400/504)
+2024-11-19 09:43:40,504 - INFO - Scraping Pentair plc (401/504)
+2024-11-19 09:43:40,857 - INFO - Scraping Jacobs Solutions Inc. (402/504)
+2024-11-19 09:43:41,367 - WARNING - No board members found for Jacobs Solutions Inc.
+2024-11-19 09:43:41,367 - INFO - Scraping VeriSign, Inc. (403/504)
+2024-11-19 09:43:41,728 - INFO - Scraping IDEX Corporation (404/504)
+2024-11-19 09:43:45,814 - ERROR - Error fetching https://www1.salary.com/IDEX-CORP-Executive-Salaries.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2024-11-19 09:43:45,815 - INFO - Scraping Trimble Inc. (405/504)
+2024-11-19 09:43:46,138 - INFO - Scraping Ulta Beauty, Inc. (406/504)
+2024-11-19 09:43:46,370 - INFO - Scraping NiSource Inc. (407/504)
+2024-11-19 09:43:46,680 - INFO - Scraping Genuine Parts Company (408/504)
+2024-11-19 09:43:50,762 - ERROR - Error fetching https://www1.salary.com/GENUINE-PARTS-CO-Executive-Salaries.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2024-11-19 09:43:50,763 - INFO - Scraping Masco Corporation (409/504)
+2024-11-19 09:43:51,069 - INFO - Scraping News Corporation (410/504)
+2024-11-19 09:43:51,481 - WARNING - No board members found for News Corporation
+2024-11-19 09:43:51,481 - INFO - Scraping News Corporation (411/504)
+2024-11-19 09:43:51,840 - WARNING - No board members found for News Corporation
+2024-11-19 09:43:51,840 - INFO - Scraping Molina Healthcare, Inc. (412/504)
+2024-11-19 09:43:52,124 - INFO - Scraping Expeditors International of Washington, Inc. (413/504)
+2024-11-19 09:43:52,571 - INFO - Scraping Kimco Realty Corporation (414/504)
+2024-11-19 09:43:52,882 - INFO - Scraping Teradyne, Inc. (415/504)
+2024-11-19 09:43:53,168 - INFO - Scraping Align Technology, Inc. (416/504)
+2024-11-19 09:43:53,470 - INFO - Scraping Dollar General Corporation (417/504)
+2024-11-19 09:43:53,928 - INFO - Scraping UDR, Inc. (418/504)
+2024-11-19 09:43:54,219 - INFO - Scraping Baxter International Inc. (419/504)
+2024-11-19 09:43:54,608 - INFO - Scraping Hormel Foods Corporation (420/504)
+2024-11-19 09:43:54,949 - INFO - Scraping Marathon Oil Corporation (421/504)
+2024-11-19 09:43:55,225 - INFO - Scraping Everest Group, Ltd. (422/504)
+2024-11-19 09:43:55,579 - WARNING - No board members found for Everest Group, Ltd.
+2024-11-19 09:43:55,579 - INFO - Scraping Avery Dennison Corporation (423/504)
+2024-11-19 09:43:55,892 - INFO - Scraping Textron Inc. (424/504)
+2024-11-19 09:43:56,191 - INFO - Scraping Alliant Energy Corporation (425/504)
+2024-11-19 09:43:56,464 - INFO - Scraping Viatris Inc. (426/504)
+2024-11-19 09:43:56,740 - INFO - Scraping CF Industries Holdings, Inc. (427/504)
+2024-11-19 09:43:57,109 - WARNING - No board members found for CF Industries Holdings, Inc.
+2024-11-19 09:43:57,110 - INFO - Scraping Domino's Pizza, Inc. (428/504)
+2024-11-19 09:43:57,513 - WARNING - No board members found for Domino's Pizza, Inc.
+2024-11-19 09:43:57,513 - INFO - Scraping Amcor plc (429/504)
+2024-11-19 09:43:57,866 - INFO - Scraping Evergy, Inc. (430/504)
+2024-11-19 09:43:58,146 - INFO - Scraping Incyte Corporation (431/504)
+2024-11-19 09:43:58,483 - INFO - Scraping Healthpeak Properties, Inc. (432/504)
+2024-11-19 09:43:58,881 - WARNING - No board members found for Healthpeak Properties, Inc.
+2024-11-19 09:43:58,881 - INFO - Scraping Nordson Corporation (433/504)
+2024-11-19 09:43:59,196 - INFO - Scraping Jabil Inc. (434/504)
+2024-11-19 09:43:59,460 - INFO - Scraping Moderna, Inc. (435/504)
+2024-11-19 09:43:59,719 - INFO - Scraping BXP, Inc. (436/504)
+2024-11-19 09:44:00,075 - WARNING - No board members found for BXP, Inc.
+2024-11-19 09:44:00,075 - INFO - Scraping F5, Inc. (437/504)
+2024-11-19 09:44:00,507 - WARNING - No board members found for F5, Inc.
+2024-11-19 09:44:00,508 - INFO - Scraping Dollar Tree, Inc. (438/504)
+2024-11-19 09:44:00,818 - INFO - Scraping Pool Corporation (439/504)
+2024-11-19 09:44:01,145 - INFO - Scraping Regency Centers Corporation (440/504)
+2024-11-19 09:44:01,445 - INFO - Scraping Skyworks Solutions, Inc. (441/504)
+2024-11-19 09:44:01,759 - INFO - Scraping EPAM Systems, Inc. (442/504)
+2024-11-19 09:44:02,124 - INFO - Scraping Tapestry, Inc. (443/504)
+2024-11-19 09:44:02,449 - INFO - Scraping Revvity, Inc. (444/504)
+2024-11-19 09:44:02,858 - WARNING - No board members found for Revvity, Inc.
+2024-11-19 09:44:02,858 - INFO - Scraping Universal Health Services, Inc. (445/504)
+2024-11-19 09:44:03,226 - WARNING - No board members found for Universal Health Services, Inc.
+2024-11-19 09:44:03,226 - INFO - Scraping Stanley Black & Decker, Inc. (446/504)
+2024-11-19 09:44:03,545 - INFO - Scraping DaVita Inc. (447/504)
+2024-11-19 09:44:03,862 - INFO - Scraping Akamai Technologies, Inc. (448/504)
+2024-11-19 09:44:04,105 - INFO - Scraping C.H. Robinson Worldwide, Inc. (449/504)
+2024-11-19 09:44:04,529 - WARNING - No board members found for C.H. Robinson Worldwide, Inc.
+2024-11-19 09:44:04,529 - INFO - Scraping Ralph Lauren Corporation (450/504)
+2024-11-19 09:44:04,809 - INFO - Scraping Molson Coors Beverage Company (451/504)
+2024-11-19 09:44:05,207 - WARNING - No board members found for Molson Coors Beverage Company
+2024-11-19 09:44:05,207 - INFO - Scraping Campbell Soup Company (452/504)
+2024-11-19 09:44:05,515 - INFO - Scraping Camden Property Trust (453/504)
+2024-11-19 09:44:05,807 - INFO - Scraping Conagra Brands, Inc. (454/504)
+2024-11-19 09:44:06,068 - INFO - Scraping Paycom Software, Inc. (455/504)
+2024-11-19 09:44:06,378 - INFO - Scraping Bunge Global SA (456/504)
+2024-11-19 09:44:06,614 - WARNING - No board members found for Bunge Global SA
+2024-11-19 09:44:06,614 - INFO - Scraping Jack Henry & Associates, Inc. (457/504)
+2024-11-19 09:44:06,963 - WARNING - No board members found for Jack Henry & Associates, Inc.
+2024-11-19 09:44:06,963 - INFO - Scraping Aptiv PLC (458/504)
+2024-11-19 09:44:07,245 - INFO - Scraping Host Hotels & Resorts, Inc. (459/504)
+2024-11-19 09:44:07,539 - INFO - Scraping Albemarle Corporation (460/504)
+2024-11-19 09:44:07,818 - INFO - Scraping Allegion plc (461/504)
+2024-11-19 09:44:08,137 - INFO - Scraping CarMax, Inc. (462/504)
+2024-11-19 09:44:08,399 - INFO - Scraping Juniper Networks, Inc. (463/504)
+2024-11-19 09:44:08,717 - INFO - Scraping Eastman Chemical Company (464/504)
+2024-11-19 09:44:09,079 - INFO - Scraping Dayforce Inc (465/504)
+2024-11-19 09:44:09,445 - WARNING - No board members found for Dayforce Inc
+2024-11-19 09:44:09,445 - INFO - Scraping Solventum Corporation (466/504)
+2024-11-19 09:44:09,878 - WARNING - No board members found for Solventum Corporation
+2024-11-19 09:44:09,878 - INFO - Scraping Norwegian Cruise Line Holdings Ltd. (467/504)
+2024-11-19 09:44:10,280 - WARNING - No board members found for Norwegian Cruise Line Holdings Ltd.
+2024-11-19 09:44:10,280 - INFO - Scraping The J. M. Smucker Company (468/504)
+2024-11-19 09:44:10,667 - WARNING - No board members found for The J. M. Smucker Company
+2024-11-19 09:44:10,667 - INFO - Scraping Franklin Resources, Inc. (469/504)
+2024-11-19 09:44:10,949 - INFO - Scraping Assurant, Inc. (470/504)
+2024-11-19 09:44:11,280 - INFO - Scraping MGM Resorts International (471/504)
+2024-11-19 09:44:11,545 - INFO - Scraping Super Micro Computer, Inc. (472/504)
+2024-11-19 09:44:11,815 - INFO - Scraping Generac Holdings Inc. (473/504)
+2024-11-19 09:44:12,375 - INFO - Scraping Lamb Weston Holdings, Inc. (474/504)
+2024-11-19 09:44:12,680 - INFO - Scraping Bio-Techne Corporation (475/504)
+2024-11-19 09:44:12,992 - INFO - Scraping Catalent, Inc. (476/504)
+2024-11-19 09:44:13,276 - INFO - Scraping A. O. Smith Corporation (477/504)
+2024-11-19 09:44:13,622 - WARNING - No board members found for A. O. Smith Corporation
+2024-11-19 09:44:13,622 - INFO - Scraping Pinnacle West Capital Corporation (478/504)
+2024-11-19 09:44:13,910 - INFO - Scraping The Interpublic Group of Companies, Inc. (479/504)
+2024-11-19 09:44:14,268 - WARNING - No board members found for The Interpublic Group of Companies, Inc.
+2024-11-19 09:44:14,268 - INFO - Scraping Wynn Resorts, Limited (480/504)
+2024-11-19 09:44:14,641 - WARNING - No board members found for Wynn Resorts, Limited
+2024-11-19 09:44:14,641 - INFO - Scraping The AES Corporation (481/504)
+2024-11-19 09:44:15,006 - WARNING - No board members found for The AES Corporation
+2024-11-19 09:44:15,006 - INFO - Scraping LKQ Corporation (482/504)
+2024-11-19 09:44:15,315 - INFO - Scraping MarketAxess Holdings Inc. (483/504)
+2024-11-19 09:44:15,642 - INFO - Scraping Federal Realty Investment Trust (484/504)
+2024-11-19 09:44:16,066 - INFO - Scraping Charles River Laboratories International, Inc. (485/504)
+2024-11-19 09:44:16,469 - WARNING - No board members found for Charles River Laboratories International, Inc.
+2024-11-19 09:44:16,470 - INFO - Scraping Globe Life Inc. (486/504)
+2024-11-19 09:44:16,894 - WARNING - No board members found for Globe Life Inc.
+2024-11-19 09:44:16,894 - INFO - Scraping Teleflex Incorporated (487/504)
+2024-11-19 09:44:17,178 - INFO - Scraping Mohawk Industries, Inc. (488/504)
+2024-11-19 09:44:17,558 - WARNING - No board members found for Mohawk Industries, Inc.
+2024-11-19 09:44:17,558 - INFO - Scraping Hasbro, Inc. (489/504)
+2024-11-19 09:44:17,850 - INFO - Scraping Henry Schein, Inc. (490/504)
+2024-11-19 09:44:18,114 - INFO - Scraping The Mosaic Company (491/504)
+2024-11-19 09:44:18,457 - WARNING - No board members found for The Mosaic Company
+2024-11-19 09:44:18,457 - INFO - Scraping APA Corporation (492/504)
+2024-11-19 09:44:18,767 - INFO - Scraping Celanese Corporation (493/504)
+2024-11-19 09:44:19,037 - INFO - Scraping Enphase Energy, Inc. (494/504)
+2024-11-19 09:44:19,324 - INFO - Scraping Invesco Ltd. (495/504)
+2024-11-19 09:44:19,641 - INFO - Scraping Caesars Entertainment, Inc. (496/504)
+2024-11-19 09:44:20,066 - WARNING - No board members found for Caesars Entertainment, Inc.
+2024-11-19 09:44:20,066 - INFO - Scraping Match Group, Inc. (497/504)
+2024-11-19 09:44:20,418 - INFO - Scraping Paramount Global (498/504)
+2024-11-19 09:44:20,782 - WARNING - No board members found for Paramount Global
+2024-11-19 09:44:20,782 - INFO - Scraping Huntington Ingalls Industries, Inc. (499/504)
+2024-11-19 09:44:21,181 - INFO - Scraping BorgWarner Inc. (500/504)
+2024-11-19 09:44:21,589 - INFO - Scraping Walgreens Boots Alliance, Inc. (501/504)
+2024-11-19 09:44:21,921 - INFO - Scraping FMC Corporation (502/504)
+2024-11-19 09:44:22,221 - INFO - Scraping Qorvo, Inc. (503/504)
+2024-11-19 09:44:22,584 - INFO - Scraping Amentum Holdings, Inc. (504/504)
+2024-11-19 09:44:22,985 - WARNING - No board members found for Amentum Holdings, Inc.

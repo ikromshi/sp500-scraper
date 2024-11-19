@@ -1,0 +1,9 @@
+Exchange,Symbol,Shortname,Longname,Sector,Industry
+NMS,NVDA,NVIDIA Corporation,NVIDIA Corporation,Technology,Semiconductors
+NMS,AAPL,Apple Inc.,Apple Inc.,Technology,Consumer Electronics
+NMS,MSFT,Microsoft Corporation,Microsoft Corporation,Technology,Software - Infrastructure
+NMS,AMZN,"Amazon.com, Inc.","Amazon.com, Inc.",Consumer Cyclical,Internet Retail
+NMS,GOOG,Alphabet Inc.,Alphabet Inc.,Communication Services,Internet Content & Information
+NMS,GOOGL,Alphabet Inc.,Alphabet Inc.,Communication Services,Internet Content & Information
+NMS,META,"Meta Platforms, Inc.","Meta Platforms, Inc.",Communication Services,Internet Content & Information
+NMS,TSLA,"Tesla, Inc.","Tesla, Inc.",Consumer Cyclical,Auto Manufacturers
