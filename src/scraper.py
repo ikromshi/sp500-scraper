@@ -90,15 +90,12 @@ def parse_historical_board_members(html):
     soup = BeautifulSoup(html, 'html.parser')
     board_members = []
     
-    # Find the main container div
     main_div = soup.find('div', class_='sa-layout-section border-top-none padding0 padding-top15 margin-top20 padding-bottom10')
     
     if main_div:
-        # Find the flex-div containing the board member links
         flex_div = main_div.find('div', class_='flex-div')
         
         if flex_div:
-            # Find all anchor tags with the specified class
             links = flex_div.find_all('a', class_='other-boarddirectors-a')
             
             for link in links:
