@@ -14,13 +14,11 @@ def read_companies(file_path):
         reader = csv.DictReader(f)
         return [row['Longname'] for row in reader]
 
-
 def generate_url(company_name):
     """generates the URL for a given company; call this if you've changed URL formatting below;"""
     formatted_name = company_name.upper().replace(' ', '-').replace('.COM', '-com').replace('.', '').replace(',', '').replace('&', 'and').replace('"', '').replace('CORPORATION', 'CORP').replace('COMPANY', 'CO').replace('INCORPORATED', 'INC').replace('INDUSTRIES', 'IND')
     encoded_name = quote(formatted_name)
     return f"https://www1.salary.com/{encoded_name}-Executive-Salaries.html"
-
 
 def generate_member_url(first_name, last_name, company_name, year):
     """generates the URL for a board member's historical data"""
@@ -28,7 +26,6 @@ def generate_member_url(first_name, last_name, company_name, year):
     formatted_company = company_name.upper().replace(' ', '-').replace('.COM', '-com').replace('.', '').replace(',', '').replace('&', 'and').replace('"', '').replace('CORPORATION', 'CORP').replace('COMPANY', 'CO').replace('INCORPORATED', 'INC').replace('INDUSTRIES', 'IND')
     encoded_company = quote(formatted_company)
     return f"https://www.salary.com/tools/executive-compensation-calculator/{formatted_name}-board-member-of-{encoded_company}?year={year}"
-
 
 def generate_and_save_urls(input_file, output_file):
     """generates URLs for all companies and saves them to CSV file; call this if you've changed URL formatting in generate_url();"""
@@ -43,7 +40,6 @@ def generate_and_save_urls(input_file, output_file):
     logging.info(f"Generated and saved URLs for {len(urls)} companies to {output_file}")
     print(f"Generated and saved URLs for {len(urls)} companies to {output_file}")
 
-
 def fetch_page(url):
     """fetches the HTML for a generated URL; logs a WARNING if the URL is wrong;"""
     try:
@@ -54,7 +50,6 @@ def fetch_page(url):
         logging.error(f"Error fetching {url}: {e}")
         print(f"Error fetching {url}: {e}")
         return None
-
 
 def parse_board_members(html, company_name):
     """parses the HTML and mines board member information;"""
@@ -79,11 +74,9 @@ def parse_board_members(html, company_name):
     
     return board_members
 
-
 def create_folder_if_not_exists(folder_path):
     os.makedirs(folder_path, exist_ok=True)
     print(f"Folder created or already exists: {folder_path}")
-
 
 def parse_historical_board_members(html):
     """parses the HTML and extracts historical board member information"""
@@ -104,6 +97,23 @@ def parse_historical_board_members(html):
     
     return board_members
 
+def parse_compensation_data(html):
+    """parses the HTML and extracts compensation data"""
+    soup = BeautifulSoup(html, 'html.parser')
+    compensation_data = {}
+    
+    compensation_div = soup.find('div', class_='sa-layout-section border-top-none padding0 bluegreengradient')
+    if compensation_div:
+        name_div = compensation_div.find('h3', class_='sa-cat-links-title text-size22 padding-left25 padding-top25')
+        if name_div:
+            name = name_div.text.strip()
+            compensation_data['Name'] = name
+
+        total_compensation = compensation_div.find('div', class_='font-semibold text-size18 text-blue')
+        if total_compensation:
+            compensation_data['Total Compensation'] = total_compensation.text.strip()
+    
+    return compensation_data
 
 def main():
     input_folder = "input_data"
@@ -141,20 +151,12 @@ def main():
             board_members = parse_board_members(html, company)
             total_board_members += len(board_members)
             
-            # append results to the CSV file for current year
-            with open(bm_output, 'a', newline='') as f:
-                writer = csv.DictWriter(f, fieldnames=['Company', 'Name', 'Total Compensation'])
-                writer.writerows(board_members)
-            
-            print(f"Found {len(board_members)} board members for {company}")
-            logging.info(f"Found {len(board_members)} board members for {company}")
-            
             # scrape historical data
             company_folder = os.path.join(output_folder, company.replace(' ', '_'))
             create_folder_if_not_exists(company_folder)
             
             for year in range(2024, 2018, -1):  # this seems to be a good range
-                historical_members = set()
+                historical_members = {}
                 for member in board_members:
                     first_name, last_name = member['Name'].split(' ', 1)
                     member_url = generate_member_url(first_name, last_name, company, year)
@@ -165,7 +167,17 @@ def main():
                     
                     if member_html:
                         new_members = parse_historical_board_members(member_html)
-                        historical_members.update(new_members)
+                        compensation_data = parse_compensation_data(member_html)
+                        
+                        # Add the compensation data for the current member
+                        if compensation_data['Name'] == f"{first_name} {last_name}":
+                            historical_members[compensation_data['Name']] = compensation_data['Total Compensation']
+                        
+                        # Add other board members without compensation data
+                        for new_member in new_members:
+                            if new_member not in historical_members:
+                                historical_members[new_member] = "N/A"
+                        
                         logging.info(f"Found {len(new_members)} historical board members for {first_name} {last_name}, {company}, {year}")
                     else:
                         logging.warning(f"No data found for {first_name} {last_name}, {company}, {year}")
@@ -174,19 +186,18 @@ def main():
                 # save historical data
                 historical_output = os.path.join(company_folder, f"{company}_board_members_{year}.csv")
                 with open(historical_output, 'w', newline='') as f:
-                    writer = csv.writer(f)
-                    writer.writerow(['Name'])
-                    writer.writerows([[name] for name in historical_members])
+                    writer = csv.DictWriter(f, fieldnames=['Name', 'Total Compensation'])
+                    writer.writeheader()
+                    for name, compensation in historical_members.items():
+                        writer.writerow({'Name': name, 'Total Compensation': compensation})
                 
                 print(f"Scraped {len(historical_members)} board members for {company} in {year}")
                 logging.info(f"Scraped {len(historical_members)} board members for {company} in {year}")
-
     
     print(f"Scraping completed. Total board members found: {total_board_members}")
     print(f"Results saved to {bm_output} and individual company folders")
     logging.info(f"Scraping completed. Total board members found: {total_board_members}")
     logging.info(f"Results saved to {bm_output} and individual company folders")
-
 
 if __name__ == "__main__":
     main()
