@@ -170,7 +170,7 @@ def main():
                         compensation_data = parse_compensation_data(member_html)
                         
                         # Add the compensation data for the current member
-                        if compensation_data['Name'] == f"{first_name} {last_name}":
+                        if compensation_data.get('Name') == f"{first_name} {last_name}":
                             historical_members[compensation_data['Name']] = compensation_data['Total Compensation']
                         
                         # Add other board members without compensation data
@@ -181,18 +181,21 @@ def main():
                         logging.info(f"Found {len(new_members)} historical board members for {first_name} {last_name}, {company}, {year}")
                     else:
                         logging.warning(f"No data found for {first_name} {last_name}, {company}, {year}")
+                
+                # save historical data only if board members were found
+                if historical_members:
+                    historical_output = os.path.join(company_folder, f"{company}_board_members_{year}.csv")
+                    with open(historical_output, 'w', newline='') as f:
+                        writer = csv.DictWriter(f, fieldnames=['Name', 'Total Compensation'])
+                        writer.writeheader()
+                        for name, compensation in historical_members.items():
+                            writer.writerow({'Name': name, 'Total Compensation': compensation})
                     
-                
-                # save historical data
-                historical_output = os.path.join(company_folder, f"{company}_board_members_{year}.csv")
-                with open(historical_output, 'w', newline='') as f:
-                    writer = csv.DictWriter(f, fieldnames=['Name', 'Total Compensation'])
-                    writer.writeheader()
-                    for name, compensation in historical_members.items():
-                        writer.writerow({'Name': name, 'Total Compensation': compensation})
-                
-                print(f"Scraped {len(historical_members)} board members for {company} in {year}")
-                logging.info(f"Scraped {len(historical_members)} board members for {company} in {year}")
+                    print(f"Scraped {len(historical_members)} board members for {company} in {year}")
+                    logging.info(f"Scraped {len(historical_members)} board members for {company} in {year}")
+                else:
+                    print(f"No board members found for {company} in {year}")
+                    logging.info(f"No board members found for {company} in {year}")
     
     print(f"Scraping completed. Total board members found: {total_board_members}")
     print(f"Results saved to {bm_output} and individual company folders")
