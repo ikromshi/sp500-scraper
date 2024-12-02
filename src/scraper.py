@@ -4,8 +4,9 @@ from bs4 import BeautifulSoup
 import logging
 from urllib.parse import quote
 import os
+import uuid
 
-# logging;
+# Set up logging
 logging.basicConfig(filename='scraper.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -15,33 +16,17 @@ def read_companies(file_path):
         return [row['Longname'] for row in reader]
 
 def generate_url(company_name):
-    """generates the URL for a given company; call this if you've changed URL formatting below;"""
     formatted_name = company_name.upper().replace(' ', '-').replace('.COM', '-com').replace('.', '').replace(',', '').replace('&', 'and').replace('"', '').replace('CORPORATION', 'CORP').replace('COMPANY', 'CO').replace('INCORPORATED', 'INC').replace('INDUSTRIES', 'IND')
     encoded_name = quote(formatted_name)
     return f"https://www1.salary.com/{encoded_name}-Executive-Salaries.html"
 
 def generate_member_url(first_name, last_name, company_name, year):
-    """generates the URL for a board member's historical data"""
     formatted_name = f"{first_name}-{last_name}".lower().replace('.', '').replace(' ', '-')
     formatted_company = company_name.upper().replace(' ', '-').replace('.COM', '-com').replace('.', '').replace(',', '').replace('&', 'and').replace('"', '').replace('CORPORATION', 'CORP').replace('COMPANY', 'CO').replace('INCORPORATED', 'INC').replace('INDUSTRIES', 'IND')
     encoded_company = quote(formatted_company)
     return f"https://www.salary.com/tools/executive-compensation-calculator/{formatted_name}-board-member-of-{encoded_company}?year={year}"
 
-def generate_and_save_urls(input_file, output_file):
-    """generates URLs for all companies and saves them to CSV file; call this if you've changed URL formatting in generate_url();"""
-    companies = read_companies(input_file)
-    urls = [(company, generate_url(company)) for company in companies]
-    
-    with open(output_file, 'w', newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow(['Company', 'URL'])
-        writer.writerows(urls)
-    
-    logging.info(f"Generated and saved URLs for {len(urls)} companies to {output_file}")
-    print(f"Generated and saved URLs for {len(urls)} companies to {output_file}")
-
 def fetch_page(url):
-    """fetches the HTML for a generated URL; logs a WARNING if the URL is wrong;"""
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -52,7 +37,6 @@ def fetch_page(url):
         return None
 
 def parse_board_members(html, company_name):
-    """parses the HTML and mines board member information;"""
     soup = BeautifulSoup(html, 'html.parser')
     board_members = []
     
@@ -67,19 +51,13 @@ def parse_board_members(html, company_name):
                     name = columns[0].find('a').text.strip()
                     compensation = columns[1].text.strip().replace('Total Cash', '').strip()
                     board_members.append({
-                        'Company': company_name,
                         'Name': name,
                         'Total Compensation': compensation
                     })
     
     return board_members
 
-def create_folder_if_not_exists(folder_path):
-    os.makedirs(folder_path, exist_ok=True)
-    print(f"Folder created or already exists: {folder_path}")
-
 def parse_historical_board_members(html):
-    """parses the HTML and extracts historical board member information"""
     soup = BeautifulSoup(html, 'html.parser')
     board_members = []
     
@@ -98,7 +76,6 @@ def parse_historical_board_members(html):
     return board_members
 
 def parse_compensation_data(html):
-    """parses the HTML and extracts compensation data"""
     soup = BeautifulSoup(html, 'html.parser')
     compensation_data = {}
     
@@ -115,48 +92,52 @@ def parse_compensation_data(html):
     
     return compensation_data
 
+def create_csv_writers(output_folder):
+    os.makedirs(output_folder, exist_ok=True)
+    
+    companies_file = open(os.path.join(output_folder, 'companies.csv'), 'w', newline='')
+    companies_writer = csv.DictWriter(companies_file, fieldnames=['id', 'name'])
+    companies_writer.writeheader()
+    
+    board_members_file = open(os.path.join(output_folder, 'board_members.csv'), 'w', newline='')
+    board_members_writer = csv.DictWriter(board_members_file, fieldnames=['id', 'name'])
+    board_members_writer.writeheader()
+    
+    mappings_file = open(os.path.join(output_folder, 'mappings.csv'), 'w', newline='')
+    mappings_writer = csv.DictWriter(mappings_file, fieldnames=['id', 'company_id', 'board_member_id', 'year', 'total_compensation'])
+    mappings_writer.writeheader()
+    
+    return {
+        'companies': (companies_file, companies_writer),
+        'board_members': (board_members_file, board_members_writer),
+        'mappings': (mappings_file, mappings_writer)
+    }
+
 def main():
     input_folder = "input_data"
     input_file = os.path.join(input_folder, "companies.csv")
     output_folder = "output_data"
-    url_output = os.path.join(output_folder, "company_urls.csv")
-    bm_output = os.path.join(output_folder, "sp500_board_members.csv")
-
-    create_folder_if_not_exists(output_folder)
     
-    # generate and save URLs
-    generate_and_save_urls(input_file, url_output)
+    companies = read_companies(input_file)
+    csv_writers = create_csv_writers(output_folder)
     
-    # read URLs from the generated CSV file
-    with open(url_output, 'r') as f:
-        reader = csv.DictReader(f)
-        company_urls = list(reader)
+    company_ids = {}
+    board_member_ids = {}
     
-    total_companies = len(company_urls)
-    total_board_members = 0
-    
-    # create the output file for current year
-    with open(bm_output, 'w', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=['Company', 'Name', 'Total Compensation'])
-        writer.writeheader()
-    
-    for i, row in enumerate(company_urls, 1):
-        company = row['Company']
-        url = row['URL']
-        print(f"Scraping {company} ({i}/{total_companies})")
-        logging.info(f"Scraping {company} ({i}/{total_companies})")
+    for company in companies:
+        company_id = str(uuid.uuid4())
+        company_ids[company] = company_id
+        csv_writers['companies'][1].writerow({'id': company_id, 'name': company})
+        
+        url = generate_url(company)
+        print(f"Scraping {company}")
+        logging.info(f"Scraping {company}")
         
         html = fetch_page(url)
         if html:
             board_members = parse_board_members(html, company)
-            total_board_members += len(board_members)
             
-            # scrape historical data
-            company_folder = os.path.join(output_folder, company.replace(' ', '_'))
-            create_folder_if_not_exists(company_folder)
-            
-            for year in range(2024, 2018, -1):  # this seems to be a good range
-                historical_members = {}
+            for year in range(2024, 2018, -1):
                 for member in board_members:
                     first_name, last_name = member['Name'].split(' ', 1)
                     member_url = generate_member_url(first_name, last_name, company, year)
@@ -169,38 +150,48 @@ def main():
                         new_members = parse_historical_board_members(member_html)
                         compensation_data = parse_compensation_data(member_html)
                         
-                        # Add the compensation data for the current member
-                        if compensation_data.get('Name') == f"{first_name} {last_name}":
-                            historical_members[compensation_data['Name']] = compensation_data['Total Compensation']
+                        # Process current member
+                        if member['Name'] not in board_member_ids:
+                            board_member_id = str(uuid.uuid4())
+                            board_member_ids[member['Name']] = board_member_id
+                            csv_writers['board_members'][1].writerow({'id': board_member_id, 'name': member['Name']})
                         
-                        # Add other board members without compensation data
+                        mapping_id = str(uuid.uuid4())
+                        csv_writers['mappings'][1].writerow({
+                            'id': mapping_id,
+                            'company_id': company_ids[company],
+                            'board_member_id': board_member_ids[member['Name']],
+                            'year': year,
+                            'total_compensation': compensation_data.get('Total Compensation', 'N/A')
+                        })
+                        
+                        # Process other board members
                         for new_member in new_members:
-                            if new_member not in historical_members:
-                                historical_members[new_member] = "N/A"
+                            if new_member not in board_member_ids:
+                                board_member_id = str(uuid.uuid4())
+                                board_member_ids[new_member] = board_member_id
+                                csv_writers['board_members'][1].writerow({'id': board_member_id, 'name': new_member})
+                            
+                            mapping_id = str(uuid.uuid4())
+                            csv_writers['mappings'][1].writerow({
+                                'id': mapping_id,
+                                'company_id': company_ids[company],
+                                'board_member_id': board_member_ids[new_member],
+                                'year': year,
+                                'total_compensation': 'N/A'
+                            })
                         
-                        logging.info(f"Found {len(new_members)} historical board members for {first_name} {last_name}, {company}, {year}")
+                        logging.info(f"Processed {len(new_members)} board members for {company} in {year}")
                     else:
                         logging.warning(f"No data found for {first_name} {last_name}, {company}, {year}")
-                
-                # save historical data only if board members were found
-                if historical_members:
-                    historical_output = os.path.join(company_folder, f"{company}_board_members_{year}.csv")
-                    with open(historical_output, 'w', newline='') as f:
-                        writer = csv.DictWriter(f, fieldnames=['Name', 'Total Compensation'])
-                        writer.writeheader()
-                        for name, compensation in historical_members.items():
-                            writer.writerow({'Name': name, 'Total Compensation': compensation})
                     
-                    print(f"Scraped {len(historical_members)} board members for {company} in {year}")
-                    logging.info(f"Scraped {len(historical_members)} board members for {company} in {year}")
-                else:
-                    print(f"No board members found for {company} in {year}")
-                    logging.info(f"No board members found for {company} in {year}")
     
-    print(f"Scraping completed. Total board members found: {total_board_members}")
-    print(f"Results saved to {bm_output} and individual company folders")
-    logging.info(f"Scraping completed. Total board members found: {total_board_members}")
-    logging.info(f"Results saved to {bm_output} and individual company folders")
+    # Close all CSV files
+    for file, _ in csv_writers.values():
+        file.close()
+    
+    print(f"Scraping completed. Results saved to {output_folder}")
+    logging.info(f"Scraping completed. Results saved to {output_folder}")
 
 if __name__ == "__main__":
     main()
